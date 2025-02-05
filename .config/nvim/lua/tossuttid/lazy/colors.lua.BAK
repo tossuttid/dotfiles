@@ -1,0 +1,17 @@
+function ColorMyPencils(color)
+    color = color or "monocle"
+	vim.cmd.colorscheme(color)
+end
+
+return {
+    {
+        'Calder-Ty/Monocle.nvim',
+        name = 'monocle',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            
+            ColorMyPencils();
+        end
+    },
+}
